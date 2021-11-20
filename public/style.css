@@ -34,3 +34,25 @@ a:visited {
 .my-10 {
   margin: 6rem auto !important;
 }
+
+.thumbnail {
+  padding: 0 0.5rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.thumbnail-parent {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.thumbnail-parent > .slick-prev:before,
+.thumbnail-parent > .slick-next:before {
+  /* color: rgba(0, 0, 0, 0.55) !important; */
+}
+
+.slick-center {
+  box-shadow: rgba(0, 0, 0, 0.55);
+}

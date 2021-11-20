@@ -1,26 +1,34 @@
 import React from "react";
 import { Container, Col, Row, Image } from "react-bootstrap";
 
-const SingleProject = () => {
+const SingleProject = ({
+  title,
+  role,
+  desc,
+  site,
+  youTube,
+  gitHub,
+  imgSrc,
+}) => {
   return (
-    <Container className="my-5" id="portfolio">
-      <Row>
-        <Col
-          sm={12}
-          md={10}
-          lg={8}
-          className="mx-auto"
-          style={{ textAlign: "center" }}
-        >
-          <h4>Portfolio</h4>
-          <h1>My Projects</h1>
-          <p>
-            A series of projects that I developed in the past year. There is
-            definitely a theme. That theme is "all things cute, cuddly, and
-            animated."
-          </p>
-        </Col>
-      </Row>
+    <Container className="my-2 px-0" id="portfolio">
+      <div className="d-flex flex-column align-items-center justify-content-center">
+        <h1 className="align-self-center">{title}</h1>
+        <h6 className="align-self-center">{desc}</h6>
+        <div className="align-self-center">
+          <a className="mx-2" href={site}>
+            Site
+          </a>
+          |
+          <a className="mx-2" href={youTube}>
+            YouTube
+          </a>
+          |
+          <a className="mx-2" href={gitHub}>
+            GitHub
+          </a>
+        </div>
+      </div>
     </Container>
   );
 };
