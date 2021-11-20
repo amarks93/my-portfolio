@@ -2,7 +2,7 @@
 
 A portfolio that I designed and developed to showcase me and my projects.
 
-See the deployed site [here](https://www.alexandravmarks.com)
+See the deployed site [here](http://www.alexandravmarks.com).
 
 ## Sections
 
