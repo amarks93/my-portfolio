@@ -1,15 +1,8 @@
-import React from "react";
-import {
-  Container,
-  Col,
-  Row,
-  Image,
-  Button,
-  ListGroup,
-  Nav,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Col, Row, Image, ListGroup, Nav } from "react-bootstrap";
 
 const About = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <Container className="my-5" id="about">
       <Row>
@@ -29,6 +22,30 @@ const About = () => {
               engineer. I pursue every project with creativity, organization,
               and efficiency in mind in order to deliver applications with a
               seamless user experience.
+              {showMore ? (
+                <>
+                  <br />
+                  <br />I am currently working as a Teaching Fellow for the
+                  Grace Hopper Program at Fullstack Academy where I mentor a
+                  class of 30+ students, provide support, and aid them with
+                  engineering technical concepts, algorithms, and debugging.
+                  <br />
+                  <br />
+                  When I am not coding, I am training contortion and handstands,
+                  finding new animes to binge, and cuddling with my cat, Luna
+                  (as in Lovegood, but also as in the cat from Sailor Moon). I
+                  love video editing, playing around on PicMonkey, and getting
+                  creative with all different mediums. Van Leeuwen's vegan mint
+                  chocolate chip ice cream is my dessert of choice.
+                  <a className="mx-1" onClick={() => setShowMore(false)}>
+                    Close
+                  </a>
+                </>
+              ) : (
+                <a className="mx-1" onClick={() => setShowMore(true)}>
+                  Learn more
+                </a>
+              )}
             </p>
           </Row>
           <Row>

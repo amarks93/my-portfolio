@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Col, Row, Image } from "react-bootstrap";
 import Slider from "react-slick";
 import SingleProject from "./SingleProject";
+import WorksInProgress from "./WorksInProgress";
 
 const Portfolio = () => {
   const [navThumbnails, setNavThumbnails] = useState();
@@ -78,31 +79,33 @@ const Portfolio = () => {
             className="my-3"
           >
             <SingleProject
-              title={"Character Spot"}
-              role={"Team Developer"}
-              desc={
-                "An e-commerce website for purchasing your favorite characters."
-              }
-              imgSrc={"/images/character-spot-thumbnail.png"}
+              role="Team Developer"
+              desc="An e-commerce website for purchasing your favorite characters."
+              site="https://character-spot.herokuapp.com/"
+              demo="https://youtu.be/Si6PQvqs2yw"
+              repo="https://github.com/graceshopper-team-charmander/graceshopper-project"
+              learnMore="My contributions toward this site include UI/UX design, the rendering of all products, single product, and order history pages, as well as ensuring accurate inventory and quantity counts upon adding products to cart. As a team, we worked together on schema design, express routes, and authentication."
+              techStack="React | Redux | PostgreSQL | Sequelize | Express | Node.js"
             />
             <SingleProject
-              title={"Mole Tracks"}
-              role={"Team Developer"}
-              desc={"A mobile app for tracking the moles on your skin."}
-              imgSrc={"/images/mole-tracks-thumbnail.png"}
+              role="Team Developer"
+              desc="A mobile app for tracking the moles on your skin."
+              site="https://mole-tracks.herokuapp.com/"
+              demo="https://youtu.be/Kes7bkad9Hc"
+              repo="https://github.com/2108-the-muses/mole-tracks"
+              learnMore="My contributions toward this mobile application include the UI/UX design, the log in, single mole, add mole, entries, compare entries, and profile screens, as well as incorporating authentication with Firebase and Google sign in."
+              techStack="React-Native | Redux | PostgreSQL | Sequelize | Express | Node.js | Firebase | Cloudinary | TensorFlow.js"
             />
             <SingleProject
-              title={"Being A Grown Up"}
-              role={"Solo Developer"}
-              desc={"An old school RPG. Do chores -> get points."}
-              imgSrc={"/images/being-a-grown-up-thumbnail.png"}
+              role="Solo Developer"
+              desc="An old school RPG. Do chores - get points."
+              site="https://being-a-grown-up.herokuapp.com/"
+              demo="https://youtu.be/PFAz8eyRLew"
+              repo="https://github.com/amarks93/being-a-grown-up"
+              learnMore="I had so much fun creating the main scene and coming up with the theme for this game. Originally inspired by the many days I spent in my youth playing Harvest Moon from a floppy disk."
+              techStack="JavaScript | Phaser 3 | Tiled | Webpack"
             />
-            <SingleProject
-              title={"Extras and Works In Progress"}
-              role={"Solo Developer"}
-              desc={"A collection of things that I am proud of."}
-              imgSrc={"/images/extra-and-wip-thumbnail.png"}
-            />
+            <WorksInProgress />
           </Slider>
         </Row>
       </Col>

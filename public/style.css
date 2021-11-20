@@ -7,18 +7,16 @@
 
 a {
   color: rgba(0, 0, 0, 0.55) !important;
+  text-decoration: none !important;
 }
 
 a:hover {
   color: pink !important;
+  cursor: pointer;
 }
 
 a:active {
   color: pink !important;
-}
-
-a:visited {
-  color: rgba(0, 0, 0, 0.55) !important;
 }
 
 .contact-button {
@@ -40,6 +38,9 @@ a:visited {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  cursor: pointer;
+  padding-top: 10px !important;
+  padding-bottom: 12px !important;
 }
 
 .thumbnail-parent {
@@ -48,11 +49,13 @@ a:visited {
   align-items: center !important;
 }
 
-.thumbnail-parent > .slick-prev:before,
-.thumbnail-parent > .slick-next:before {
-  /* color: rgba(0, 0, 0, 0.55) !important; */
+.slick-center {
+  transform: scale(1.05);
+  box-shadow: 0 8px 6px -6px black !important;
 }
 
-.slick-center {
-  box-shadow: rgba(0, 0, 0, 0.55);
+@media (max-width: 768px) {
+  .center-site-link {
+    margin: 0 1rem;
+  }
 }

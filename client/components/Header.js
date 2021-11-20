@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="md" className="my-3">
       <Container>
-        <Navbar.Brand href="#home">Alexandra Marks</Navbar.Brand>
+        <Navbar.Brand>Alexandra Marks</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
@@ -19,8 +19,7 @@ const Header = () => {
                 href="https://github.com/amarks93"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-flex align-items-center pr-4"
-                // style={{ marginRight: "10px" }}
+                className="d-flex align-items-center"
               >
                 <FaGithub />
               </Nav.Link>
@@ -28,8 +27,7 @@ const Header = () => {
                 href="https://www.linkedin.com/in/alexandravmarks/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-flex align-items-center"
-                // style={{ marginRight: "10px" }}
+                className="d-flex align-items-center center-site-link"
               >
                 <FaLinkedinIn />
               </Nav.Link>
